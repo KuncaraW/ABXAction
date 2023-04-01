@@ -1,0 +1,18 @@
+---
+exportVersion: "1"
+exportId: "8a74808c83a0ab920183f3e589c44938"
+name: "Add Project Member"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  useremail: "test@corp.local"
+  secret:8a74806d837c1d9301838280eca405b8: ""
+  secret:8a74806d837c1d930183828127d905b9: ""
+  secret:8a74806d837c1d93018382814ae405ba: ""
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+provider: "on-prem"
+configuration:
+  const_azure-system_managed_identity: false
+memoryInMB: 300
