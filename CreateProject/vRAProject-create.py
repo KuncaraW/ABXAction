@@ -52,8 +52,7 @@ class VraManager:
     def __init__(self, context, inputs):
         self.hostname = context.getSecret(inputs['vrahost'])
         self.headers = {}
-        data = self.post('/csp/gateway/am/api/login?access_token', {'username': context.getSecret(inputs['vrauser']), 'password': context.getSecret(inputs['vrapass'])})
-        data = self.post('/iaas/api/login', {'refreshToken': data['refresh_token']})
+        data = self.post('/iaas/api/login', {'refreshToken': context.getSecret(inputs['api_token'])})
         self.headers['Authorization'] = 'Bearer ' + data['token']
     def toJson(self, response):
         try: response.raise_for_status()
@@ -75,12 +74,12 @@ def handler(context, inputs):
         'name' : inputs['name'],
         'description' : inputs['description'],
         'zoneAssignmentConfigurations' : [{
-            'zoneId' : '5b2a1fc3-f2d4-451b-8d90-f375a60d32ad',
+            'zoneId' : 'd5ef4190-5610-418f-b1d1-ab6d54ada774',
             'cpuLimit' : 8,
             'maxNumberInstances' : 4
         }],
         'administrators': [{
-            'email' : inputs['admin'][0]
+            'email' : inputs['admin']
         }]
     })
     
