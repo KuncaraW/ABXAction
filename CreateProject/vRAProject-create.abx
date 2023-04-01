@@ -1,11 +1,13 @@
 ---
 exportVersion: "1"
-exportId: "8a74808c83a0ab920183f3a7fba048de"
-name: "Delete vRA Project"
+exportId: "8a74808c83a0ab920183f3a7fb9f48dc"
+name: "Create vRA Project"
 runtime: "python"
 entrypoint: "handler"
 inputs:
-  id: "99da0908-8811-499d-9bcf-592099a34b11"
+  name: "test123"
+  admin: "user10@vmwapj.com"
+  description: "Project Created by ABX"
   secret:8a5ee4d686cfe1a101873b05703563f6: ""
   secret:8a5ee4d686cfe1a101873b05947863fa: ""
 timeoutSeconds: 600
