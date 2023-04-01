@@ -5,7 +5,6 @@ name: "Add-vRA-Project-Member"
 runtime: "python"
 entrypoint: "handler"
 inputs:
-  id: "99da0908-8811-499d-9bcf-592099a34b11"
   useremail: "user11@vmwapj.com"
   secret:8a5ee4d686cfe1a101873b05703563f6: ""
   secret:8a5ee4d686cfe1a101873b05947863fa: ""
