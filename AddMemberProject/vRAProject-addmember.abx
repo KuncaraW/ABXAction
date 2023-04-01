@@ -1,7 +1,7 @@
 ---
 exportVersion: "1"
 exportId: "8a74808c83a0ab920183f3e589c44938"
-name: "Add vRA Project Member"
+name: "Add-vRA-Project-Member"
 runtime: "python"
 entrypoint: "handler"
 inputs:
