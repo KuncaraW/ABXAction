@@ -1,0 +1,17 @@
+---
+exportVersion: "1"
+exportId: "8a74808c83a0ab920183f3a7fba048de"
+name: "vRAProject-delete"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  secret:8a74806d837c1d9301838280eca405b8: ""
+  secret:8a74806d837c1d930183828127d905b9: ""
+  secret:8a74806d837c1d93018382814ae405ba: ""
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+provider: "on-prem"
+configuration:
+  const_azure-system_managed_identity: false
+memoryInMB: 200
