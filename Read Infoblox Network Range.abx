@@ -1,0 +1,13 @@
+---
+exportVersion: "1"
+exportId: "8a7480fe89f1e465018a076cb6cc12ea"
+name: "Read Infoblox Network Range"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  id: "network/ZG5zLm5ldHdvcmskMTkyLjE2OC4xMTAuMC8yNC8w:192.168.110.0/24/default"
+  infobloxHost: "nios-01a.corp.local/wapi/v2.11"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+memoryInMB: 300
